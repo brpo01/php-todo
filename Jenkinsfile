@@ -35,7 +35,7 @@ pipeline {
 
     stage('Code Quality Analysis') {
         steps {
-            sh 'sudo phploc app/ --log-csv build/logs/phploc.csv'
+            sh 'phploc app -S/ --log-csv build/logs/phploc.csv'
         }
     }
 
